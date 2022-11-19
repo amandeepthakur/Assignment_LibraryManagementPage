@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Management Page</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <h1>Library Books Details</h1>
+        
+      </div>
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search book name here.."
+        />
+        <button id="search">Search</button>
+      </div>
+      <h1 id="bookCount" >Total Books: </h1>
+      
+      <div id="buttons">
+        <h4>Author List</h4>
+        <button class="button-value" onclick="filterBook('all')">All</button>
+        <button class="button-value" onclick="filterBook('Amit_Garg')">
+          Amit_Garg
+        </button>
+        <button class="button-value" onclick="filterBook('Sharad_Kumar_Verma')">
+          Sharad_Kumar_Verma
+        </button>
+        <button class="button-value" onclick="filterBook('Vinay_Kumar_Singhal')">
+          Vinay_Kumar_Singhal
+        </button>
+        <button class="button-value" onclick="filterBook('Gunjan_Verma')">
+          Gunjan_Verma
+        </button>
+      </div>
+      <div id="Books"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
